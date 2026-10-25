@@ -1,14 +1,15 @@
 import questionary as q
 import os
 from .utils import *
+from .config import *
 
 def main():
-    
+
     clear()
 
     while True:
         choice = q.select(
-            "ScopeSim CLI",
+            "scopesim-cli",
             choices=[
                 "Setup Instrument",
                 "Exit"
@@ -19,7 +20,10 @@ def main():
             break
         else:
             clear()
-            print("Hello World")
+
+            # ask user which instrument: METIS, MICADO etc
+
+            setup_instrument()
 
 if __name__ == "__main__":
     main()
