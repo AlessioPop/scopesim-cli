@@ -18,8 +18,5 @@ dependencies = [
     "questionary",
 ]
 
-[project.scripts]
-scopesim-cli = "scopesim_cli.cli:main"
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/scopesim_cli"]

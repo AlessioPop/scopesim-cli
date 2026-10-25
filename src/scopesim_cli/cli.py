@@ -1,6 +1,11 @@
 import questionary as q
+import os
+from .utils import *
 
 def main():
+    
+    clear()
+
     while True:
         choice = q.select(
             "ScopeSim CLI",
@@ -13,7 +18,8 @@ def main():
         if choice == "Exit":
             break
         else:
-            print("...")
+            clear()
+            print("Hello World")
 
 if __name__ == "__main__":
     main()
