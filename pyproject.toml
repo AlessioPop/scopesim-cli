@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scopesim_cli"
+version = "0.1.0"
+
+authors = [
+    { name = "Alessio Popovik" },
+]
+
+dependencies = [
+    "scopesim",
+    "scopesim_templates",
+    "questionary",
+]
