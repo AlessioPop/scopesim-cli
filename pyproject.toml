@@ -10,6 +10,8 @@ authors = [
     { name = "Alessio Popovik" },
 ]
 
+packages = ["src/scopesim_cli"]
+
 dependencies = [
     "scopesim",
     "scopesim_templates",
